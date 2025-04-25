@@ -11,10 +11,11 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       /* Added background image and blur */
       background-image: url('https://raw.githubusercontent.com/NourishFoods/Website-/refs/heads/main/Copy%20of%20Copy%20of%20nourish%20foods_20250424_165146_0000.png');
-      /* Modified background-size and position */
-      background-size: contain; /* Or 'cover' if you prefer */
-      background-position: center center;
+      /* Dynamically adaptive background */
+      background-size: cover; /* Cover the entire viewport */
+      background-position: center center; /* Center the image */
       background-repeat: no-repeat;
+      min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
       filter: blur(10%); /* Apply the blur effect */
       /* Keep the rest of your original styles */
       color: #1f2a12;
@@ -22,7 +23,6 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
       text-align: center;
     }
     h1 {
